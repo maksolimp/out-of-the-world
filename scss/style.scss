@@ -1,0 +1,107 @@
+@import "normalize";
+@import "layout";
+@import "slick";
+@import "slick-theme";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+    font-family: 'trump_gothic_eastbold_italic';
+    src: url('../fonts/trump_gothic_east_bold_italic-webfont.woff2') format('woff2'),
+         url('../fonts/trump_gothic_east_bold_italic-webfont.woff') format('woff');
+}
+
+body{
+	background-color: #F5F5F5;
+}
+.ba-container{
+	background-color: #FFF;
+	max-width:1050px;
+	padding: 25px;
+	color:  #000000;
+	font: 400 14px/1.6 'Lato', Arial, sans-serif;
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+	margin: 75px auto;
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button{
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-content-slider{
+	&__slide{
+		outline: none;
+		display: flex !important;
+	}
+	&__image{
+		flex: 1 1 63%;
+	}
+	&__content{
+		flex: 1 1 37%;
+	}
+}
+
+.ba-content__main{
+	font: 700 102px/1.1 'trump_gothic_eastbold_italic', Arial, sans-serif;
+	color:  #c74c4c;
+	margin: 0;
+	transform:translateX(-42px);
+}
+.ba-content__info{
+	padding: 38px 90px 22px 40px;
+	margin: 0;
+	color: #E3E4E4;
+}
+.ba-content__submain a{
+	text-decoration: none;
+	color:  #c74c4c;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: 40px;
+	padding-bottom: 43px;
+	letter-spacing: .5em;
+	text-transform: uppercase;
+}
